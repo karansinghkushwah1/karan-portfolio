@@ -10,6 +10,51 @@ body{
     min-height: 100%;
 }
 
+/* Add this CSS at the end of your existing styles */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .work-experience {
+      display: flex;
+      flex-direction: column; /* Change the flex direction to stack elements vertically */
+      align-items: center; /* Center align the items on smaller screens */
+    }
+  
+    .work-layout {
+      text-align: center; /* Center align the text on smaller screens */
+    }
+  
+    .work-layout .logo-img {
+      width: 100%; /* Adjust the image width to fit the smaller screen */
+      margin-bottom: 10px; /* Add some margin to separate the image from the text */
+    }
+  
+    .work-layout .work-title,
+    .work-layout .para-style,
+    .work-layout a {
+      margin-left: 0; /* Reset the left margin to center align the text */
+    }
+}
+
+/* Add this CSS at the end of your existing styles */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .about-content {
+      flex-direction: column; /* Change the flex direction to stack elements vertically */
+    }
+  
+    .para1 {
+      order: 2; /* Change the order to make the paragraph come after the image */
+    }
+  
+    .about-image {
+      width: 100%; /* Adjust the image width to fit the smaller screen */
+      margin-bottom: 10px; /* Add some margin to separate the image from the paragraph */
+    }
+}
+  
+
 
 /* ::-webkit-scrollbar {
     width: 10px;
@@ -48,7 +93,7 @@ body{
 .main-page{
     background-color: black;
     margin-top: 5%;
-    padding: 10%;
+    padding: 6%;
 }
 
 .image1 {
@@ -82,17 +127,32 @@ body{
 }
 
 .second-page{
-    background-image: url("images/bg1.jpg");
+    /* background-image: url("images/bg1.jpg"); */
+    background-color: #CEFAF8;
     background-size: cover;
-    height: 325%;  
+    /* height: 325%;   */
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    margin: 0;
-    padding: 10%;
+    /* padding: 10%; */
+    margin: 2%;
 }
 
 .abouts {
+    text-align: center;
+    color: #272727;
+    padding-bottom: 5%;
+    font-size: 250%;
+    
+}
+
+.about-content {
+    display: flex;
+    align-items: center; /* Aligns the flex items vertically */
+}
+  
+
+.workii {
     text-align: center;
     color: #f1f1f1;
     padding-bottom: 3%;
@@ -101,16 +161,29 @@ body{
 }
 
 .para1{
-    color: cyan;
+    flex: 1;
+    color: gray;
     text-decoration: antiquewhite;
     font-size: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.about-image {
+    width: 50%;
+    border-radius: 8%;
+    padding-right: 2%;
+    padding-bottom: 2%;
 }
 
 .third-page{
-    background-image: url("images/bg2.jpg");
+    /* background-image: url("images/bg2.jpg"); */
     background-size: cover;
-    height: 325%;  
+    /* height: 325%;   */
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -148,11 +221,19 @@ body{
 }
 
 .work-title{
-    color: #f1f1f1;
+    color: black;
 }
 
 .para-style{
-    color: aliceblue;
+    color: gray;
+}
+
+.work-title1{
+    color: white;
+}
+
+.para-style1{
+    color: antiquewhite;
 }
 
 
@@ -161,9 +242,10 @@ body{
 }
 
 .fourth-page{
-/*     background-image: url("images/bg4.jpg"); */
+    /* background-image: url("images/bg4.jpg"); */
+    background-color: #CEFAF8;
     background-size: cover;
-    height: 520%;  
+    /* height: 520%;   */
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -173,10 +255,10 @@ body{
 
 .extracal{
     text-align: center;
-    color: #f1f1f1;
+    color: black;
     font-size: 250%;
     padding-top: 3%;
-    padding-bottom: 4%;
+    padding-bottom: 8%;
 
 }
 .Extrathing{
@@ -206,22 +288,32 @@ body{
 
 }
 
+.logo-img3{
+    background: #272727;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 3px;
+
+}
+
 .last-page{
-/*     background-image: url("images/bg8.jpg"); */
+    /* background-image: url("images/bg8.jpg"); */
+    /* height: 37.75rem;   */
     background-size: cover;
-    height: 37.75rem;  
+    /* height: 520%;   */
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    margin: 3%;
+    margin: 2%;
     /* padding: 10%; */
 }
 
 .contme {
     text-align: center;
     color: #f1f1f1;
-    padding-top: 16%;
-    padding-bottom: 22px;
+    padding-top: 5%;
+    padding-bottom: 10%;
     font-size: 250%;
     
 }
