@@ -161,7 +161,7 @@ body{
 }
 
 .fourth-page{
-    background-image: url("images/bg4.jpg");
+/*     background-image: url("images/bg4.jpg"); */
     background-size: cover;
     height: 520%;  
     background-position: center;
@@ -207,7 +207,7 @@ body{
 }
 
 .last-page{
-    background-image: url("images/bg8.jpg");
+/*     background-image: url("images/bg8.jpg"); */
     background-size: cover;
     height: 37.75rem;  
     background-position: center;
