@@ -10,32 +10,60 @@ body{
     min-height: 100%;
 }
 
+@media (max-width: 768px) {
+    .main-page {
+      text-align: center; /* Center align the elements on smaller screens */
+    }
+  
+    .image2, .image3 {
+      display: none; /* Hide the first and third images on smaller screens */
+    }
+}
+
+/* Add this CSS at the end of your existing styles */
+
+/* Media query for smaller screens */
 /* Add this CSS at the end of your existing styles */
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .work-experience {
       display: flex;
-      flex-direction: column; /* Change the flex direction to stack elements vertically */
-      align-items: center; /* Center align the items on smaller screens */
+      flex-wrap: wrap; /* Allow the work-layout elements to wrap on smaller screens */
+      justify-content: center; /* Center align the elements on smaller screens */
+      margin-left: 5%;
+      margin-right: 5%;
+      
     }
   
     .work-layout {
-      text-align: center; /* Center align the text on smaller screens */
+      border-radius: 2%;
+      border: 2px solid white;
+      background-color: #272727;
+      text-align: center;
+      opacity: 0.7;
+      width: 45%; /* Adjust the width for smaller screens */
+      margin: 5px;
+      padding: 3px;
     }
   
-    .work-layout .logo-img {
-      width: 100%; /* Adjust the image width to fit the smaller screen */
-      margin-bottom: 10px; /* Add some margin to separate the image from the text */
+    .logo-img {
+      border-radius: 50%;
+      width: 50%; /* Adjust the image width to fit the container */
+      max-width: 10rem; /* Add a maximum width to maintain aspect ratio */
+      height: auto; /* Allow the height to adjust proportionally */
+      margin-bottom: 3%;
     }
   
-    .work-layout .work-title,
-    .work-layout .para-style,
-    .work-layout a {
-      margin-left: 0; /* Reset the left margin to center align the text */
+    .work-title1,
+    .para-style1,
+    a {
+      /* Reset the left margin to center align the text */
+      margin-left: 0;
+      font-size: small;
     }
-}
-
+  }
+  
 /* Add this CSS at the end of your existing styles */
 
 /* Media query for smaller screens */
@@ -92,7 +120,7 @@ body{
 
 .main-page{
     background-color: black;
-    margin-top: 5%;
+    margin-top: 10%;
     padding: 6%;
 }
 
@@ -208,7 +236,8 @@ body{
     width: 22rem;
     overflow: hidden;
     padding: 3px;
-    margin-right: 3rem;
+    margin-right: 3%;
+    
 }
 
 .logo-img{
@@ -234,6 +263,7 @@ body{
 
 .para-style1{
     color: antiquewhite;
+    white-space: normal;
 }
 
 
